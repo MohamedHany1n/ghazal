@@ -381,6 +381,8 @@ body:has(.theme-toggle:checked) footer {
 
 .landing .action .hire_me {
   position: absolute;
+    /* min-height: calc(100vh - 72px); */
+
   bottom: 20%;
   left: 50%;
   background-color: var(--main-color);
