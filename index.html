@@ -15,21 +15,33 @@
 <body>
 
 <!-- start Header -->
-  <div class="header">
-    <div class="container">
-      <a href="#" class="logo">Muhammed</a>
-      <ul class="main-nav">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+<div class="header">
+  <div class="container">
+    <a href="#" class="logo">Muhammed</a>
+
+    <ul class="main-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#project">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="header-actions">
       <input type="checkbox" id="theme-toggle" class="theme-toggle">
-      <label for="theme-toggle" class="theme-label">🌙</label>
+      <label for="theme-toggle" class="theme-label" aria-label="Toggle dark mode">
+        <i class="fa-solid fa-moon icon-moon"></i>
+        <i class="fa-solid fa-sun icon-sun"></i>
+      </label>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-btn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
     </div>
   </div>
+</div>
 <!-- End Header -->
 
 
@@ -154,8 +166,8 @@
       <div class="about-image">
 
         <div class="image-wrapper">
-          <img src="./images/Gemini_Generated_Imagggge_rbp9vlrbp9vlrbp9.jpeg" alt="Muhammed Hany">
-        </div>
+                 <img src="./images/profile.png" alt="Muhammed Hany"> 
+       </div>
 
         <div class="developer-badge">
           <i class="fa-solid fa-code"></i>
@@ -280,31 +292,6 @@
   </div>
 </div>
 <!-- End Education -->
-<!-- start skills -->
-  <!-- <div class="skills" id="skills">
-    <div class="container">
-      <div class="main-header">
-        <h1>My <span>Skills</span></h1>
-      </div>
-      <div class="skills-list">
-        <span class="skill-tag">C#</span>
-        <span class="skill-tag">.NET / ASP.NET Core</span>
-        <span class="skill-tag">Entity Framework Core</span>
-        <span class="skill-tag">SQL Server</span>
-        <span class="skill-tag">REST APIs</span>
-        <span class="skill-tag">OOP &amp; LINQ</span>
-        <span class="skill-tag">Clean Architecture</span>
-        <span class="skill-tag">JWT &amp; Refresh Tokens</span>
-        <span class="skill-tag">Database Design</span>
-        <span class="skill-tag">Git &amp; GitHub</span>
-        <span class="skill-tag">C++</span>
-        <span class="skill-tag">Java OOP</span>
-      </div>
-      
-    </div>
-  </div> -->
-<!-- end skills -->
-
 
 <!-- start skills -->
 <div class="skills" id="skills">
@@ -487,123 +474,138 @@
 
     <div class="projects-grid">
 
-      <!-- ================= Main Project ================= -->
-      <div class="project-card featured">
+      <!-- ================= Main Project: POS System ================= -->
+      <!-- غيّر اللينك للينك خدمة خمسات -->
+      <a class="project-card featured" href="https://khamsat.com/programming/desktop-app/4472464-%D8%B3%D8%A3%D8%B7%D9%88%D8%B1-%D9%86%D8%B8%D8%A7%D9%85-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D9%83%D8%AA%D8%A8%D8%A9-%D8%A8%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-c-%D9%88.net" target="_blank" rel="noopener">
 
         <div class="featured-side">
-
           <div class="project-icon">
-            <i class="fa-solid fa-graduation-cap"></i>
+            <i class="fa-solid fa-cash-register"></i>
           </div>
-
           <span class="project-number">01</span>
-
         </div>
 
         <div class="project-content">
 
           <div class="project-label">
             <span></span>
-            MAIN PROJECT
+            MAIN PROJECT · REAL CLIENT PRODUCT
           </div>
 
-          <h3>Educational Center Management Platform</h3>
+          <h3>POS System for Libraries &amp; Stationery Shops</h3>
 
           <p>
-            A full backend system for managing students, parents, teachers,
-            branches, groups, sessions, attendance, subscriptions, and payments.
-            The system was rebuilt using Clean Architecture after a security
-            audit of an earlier version.
+            A ready-to-run point-of-sale system for bookstores and stationery
+            shops. It handles piece and carton sales, wholesale and retail
+            pricing with barcode support, inventory, profits and reports, and
+            runs fully offline with no subscription.
           </p>
 
           <div class="project-tech">
-            <span>ASP.NET Core</span>
-            <span>EF Core</span>
+            <span>C#</span>
+            <span>.NET 8</span>
             <span>SQL Server</span>
-            <span>JWT</span>
-            <span>Clean Architecture</span>
+            <span>Database Design</span>
           </div>
+
+          <span class="project-link">
+            View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
 
         </div>
 
-      </div>
+        <div class="project-thumb">
+          <img src="./images/project-01.webp" alt="POS System for Libraries and Stationery Shops" loading="lazy">
+        </div>
+
+      </a>
 
 
-      <!-- ================= Project 02 ================= -->
-      <div class="project-card">
+      <!-- ================= Project 02: C++ Bus Booking ================= -->
+      <!-- غيّر اللينك للينك الريبو بتاع المشروع -->
+      <a class="project-card" href="https://github.com/MohamedHany1n/Travel_Bus_Project" target="_blank" rel="noopener">
+
+        <div class="project-thumb">
+          <img src="./images/project-02.webp" alt="C++ Bus Booking System" loading="lazy">
+        </div>
 
         <div class="project-card-header">
-
           <div class="project-icon">
-            <i class="fa-solid fa-shield-halved"></i>
+            <i class="fa-solid fa-bus"></i>
           </div>
-
           <span class="project-number">02</span>
-
         </div>
 
         <div class="project-label">
           <span></span>
-          BACKEND PROJECT
+          C++ PROJECT
         </div>
 
-        <h3>Secure REST API with JWT Authentication</h3>
+        <h3>Bus Booking System</h3>
 
         <p>
-          A secure authentication system built with ASP.NET Core,
-          implementing JWT access tokens and refresh token rotation
-          to reduce token replay and unauthorized access risks.
+          A console-based trip booking system with separate admin and user
+          panels. Admins manage trips, discounts and reservations; users sign
+          up, search trips, book seats and cancel bookings. All data is saved
+          to text files.
         </p>
 
         <div class="project-tech">
-          <span>ASP.NET Core</span>
-          <span>JWT</span>
-          <span>Refresh Tokens</span>
+          <span>C++</span>
+          <span>File Handling</span>
+          <span>Structs &amp; Arrays</span>
         </div>
 
-      </div>
+        <span class="project-link">
+          View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
 
 
-      <!-- ================= Project 03 ================= -->
-      <div class="project-card">
+      <!-- ================= Project 03: E-commerce ================= -->
+      <a class="project-card" href="https://github.com/MohamedHany1n/Ecommerce" target="_blank" rel="noopener">
+
+        <div class="project-thumb">
+          <img src="./images/project-03.webp" alt="E-commerce Website" loading="lazy">
+        </div>
 
         <div class="project-card-header">
-
           <div class="project-icon">
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
           </div>
-
           <span class="project-number">03</span>
-
         </div>
 
         <div class="project-label">
           <span></span>
-          CODE AUDIT
+          FRONTEND PROJECT
         </div>
 
-        <h3>Backend Security &amp; Architecture Audit</h3>
+        <h3>E-commerce Website</h3>
 
         <p>
-          A technical review of an existing backend system that identified
-          authorization issues, missing validation, security weaknesses,
-          and architectural problems, followed by a structured remediation plan.
+          A responsive multi-page online store with a home page, shop,
+          single product page, blog, about and contact pages, built with
+          clean and reusable HTML, CSS and JavaScript.
         </p>
 
         <div class="project-tech">
-          <span>Code Review</span>
-          <span>EF Core</span>
-          <span>Security</span>
-          <span>Architecture</span>
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
         </div>
 
-      </div>
+        <span class="project-link">
+          View Project <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </span>
+      </a>
 
     </div>
 
   </div>
 </div>
 <!-- End Projects -->
+
 
 <!-- بعد End Projects -->
 <!-- Start Achievements -->
@@ -707,7 +709,7 @@
 <section class="contact" id="contact">
   <div class="container">
     <div class="main-header">
-      <h1>Contact Me</h1>
+       <h1>Contact <span>Me</span></h1>
       <p class="section-description">Tell me what your business needs to run smoother — I'll tell you how the backend can get you there.</p>
     </div>
 
@@ -755,3 +757,4 @@
 
 </body>
 </html>
+   <script src="./JS/main.js"></script>
